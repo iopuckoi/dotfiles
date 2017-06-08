@@ -1,0 +1,15 @@
+# https://metacpan.org/pod/Data::Printer#CUSTOMIZATION
+# -*- perl -*-
+{
+    print_escapes => 1,
+    hash_separator => ' => ',  # what separates keys from values
+    color => {
+        string => 'blue',
+    }
+    class => {
+        parents => 0,
+        linear_isa => 0,
+        expand => 'all',
+        show_methods => 'none', # 'all', 'none', 'public', 'private'
+    }
+};
