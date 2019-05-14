@@ -1123,3 +1123,80 @@ cd ../
 cd bundle/rust.vim/
 ls
 cd ../
+pwd
+git init
+git remote add origin https://github.com/iopuckoi/dotfiles.git
+git fetch origin
+git checkout -b master --track origin/master
+rm .bashrc .bash_logout 
+git checkout -b master --track origin/master
+gs
+git checkout -b master --track origin/master
+gs
+source .bashrc
+ls-l rt
+gs
+ls -lrt
+ls -al
+cd .bashrc.d/
+ls -lrt
+vi 1_history.bash
+vi 2_colors.bash
+git mv prompt.bash 3_prompt.bash
+gs
+git status
+vi 3_prompt.bash 
+cd ../
+vi .bashrc
+source .bashrc
+env
+ifconfig
+IP
+echo $IP
+vi .bashrc
+vi .bashrc.d/4_functions.bash 
+source .bashrc
+ver()
+ver
+distribution
+$PS1
+echo $PS1
+source .bashrc
+src
+cd .bashrc.d/
+ls -lrt
+vi 2_colors.bash 
+vi 3_prompt.bash 
+vi 1_history.bash 
+less 3_prompt.bash 
+echo $HOME
+source 3_prompt.bash 
+source 1_history.bash 
+source 2_colors.bash 
+ls -lrt
+touch 4_functions.bash
+git mv aliases.bash 5_aliases.bash
+less os.bash 
+ls -lrt
+git rm os.bash 
+ls -lrt
+vi 6_k8s_aliases.bash
+vi 5_aliases.bash 
+less 2_colors.bash 
+vi 5_aliases.bash 
+ls -lrt
+vi 3_prompt.bash 
+src
+source ~/.bashrc
+vi 3_prompt.bash 
+src
+vi 3_prompt.bash 
+src
+vi 3_prompt.bash 
+src
+vi 3_prompt.bash 
+src
+vi 3_prompt.bash 
+src
+vi 3_prompt.bash 
+src

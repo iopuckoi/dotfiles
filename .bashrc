@@ -4,6 +4,9 @@
 
 # http://blog.sanctum.geek.nz/shell-config-subfiles/
 # Load any supplementary scripts
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 if [[ -d $HOME/.bashrc.d ]] ; then
 	for config in "$HOME"/.bashrc.d/*.bash ; do
