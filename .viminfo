@@ -75,18 +75,20 @@ $
 	#
 
 # File marks:
-'0  51  156  ~/.bashrc.d/3_prompt.bash
-'1  36  0  ~/.bashrc.d/3_prompt.bash
-'2  72  11  ~/.bashrc.d/5_aliases.bash
-'3  36  64  ~/.bashrc.d/5_aliases.bash
-'4  54  25  ~/.bashrc.d/5_aliases.bash
-'5  50  0  ~/.bashrc.d/6_k8s_aliases.bash
-'6  2  0  ~/.bashrc.d/4_functions.bash
-'7  17  0  ~/.bashrc
-'8  9  17  ~/.bashrc.d/2_colors.bash
-'9  2  17  ~/.bashrc.d/1_history.bash
+'0  32  16  ~/.bashrc.d/4_functions.bash
+'1  51  156  ~/.bashrc.d/3_prompt.bash
+'2  36  0  ~/.bashrc.d/3_prompt.bash
+'3  72  11  ~/.bashrc.d/5_aliases.bash
+'4  36  64  ~/.bashrc.d/5_aliases.bash
+'5  54  25  ~/.bashrc.d/5_aliases.bash
+'6  50  0  ~/.bashrc.d/6_k8s_aliases.bash
+'7  36  0  ~/.bashrc.d/4_functions.bash
+'8  17  0  ~/.bashrc
+'9  9  17  ~/.bashrc.d/2_colors.bash
 
 # Jumplist (newest first):
+-'  32  16  ~/.bashrc.d/4_functions.bash
+-'  36  0  ~/.bashrc.d/4_functions.bash
 -'  51  156  ~/.bashrc.d/3_prompt.bash
 -'  36  0  ~/.bashrc.d/3_prompt.bash
 -'  72  11  ~/.bashrc.d/5_aliases.bash
@@ -95,7 +97,6 @@ $
 -'  1  0  ~/.bashrc.d/5_aliases.bash
 -'  50  0  ~/.bashrc.d/6_k8s_aliases.bash
 -'  1  0  ~/.bashrc.d/6_k8s_aliases.bash
--'  2  0  ~/.bashrc.d/4_functions.bash
 -'  1  7  ~/.bashrc.d/4_functions.bash
 -'  17  0  ~/.bashrc
 -'  1  0  ~/.bashrc
@@ -187,6 +188,20 @@ $
 
 # History of marks within files (newest to oldest):
 
+> ~/.bashrc.d/4_functions.bash
+	"	32	16
+	^	32	17
+	.	32	16
+	+	1	31
+	+	108	1
+	+	34	0
+	+	21	0
+	+	20	43
+	+	29	0
+	+	28	2
+	+	33	0
+	+	32	16
+
 > ~/.bashrc.d/3_prompt.bash
 	"	51	156
 	^	51	157
@@ -239,13 +254,6 @@ $
 	^	50	0
 	.	800	0
 	+	800	0
-
-> ~/.bashrc.d/4_functions.bash
-	"	2	0
-	^	2	0
-	.	74	1
-	+	1	31
-	+	74	1
 
 > ~/.bashrc
 	"	17	0

@@ -1,3 +1,37 @@
+function dirs() {
+	echo -en "${DIRC}$(builtin dirs -v)\033[0m\n\n"
+}
+
+function cd() {
+	if [[ $@ ]]; then
+		INDIR=$@
+	else
+		INDIR=$HOME
+	fi
+
+	builtin cd $INDIR && ls
+}
+
+function pushd() {
+	builtin pushd "$@" > /dev/null && dirs && ls
+}
+
+function popd() {
+	builtin popd "$@" > /dev/null && dirs && ls
+}
+
+function smiley() {
+	if [ "$?" -eq "0" ]; then
+		echo -e '\e[1;30m\e[102m\xf0\x9f\x98\x8a\e[00m'
+	else
+		echo -e '\e[1;97m\e[101m\xf0\x9f\x98\x88\e[00m'
+	fi
+}
+
+function p(){
+	eval "pushd +$@"
+}
+
 # Show the current distribution
 
 distribution ()

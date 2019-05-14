@@ -1200,3 +1200,28 @@ vi 3_prompt.bash
 src
 vi 3_prompt.bash 
 src
+cd
+gs
+git add .bashrc.d/os.bash 
+git add .bash_profile .bashrc.d/1_history.bash .bashrc.d/2_colors.bash .bashrc.d/4_functions.bash .bashrc.d/6_k8s_aliases.bash
+git commit -m "initial commit" .bash_profile .bashrc.d/1_history.bash .bashrc.d/2_colors.bash .bashrc.d/4_functions.bash .bashrc.d/6_k8s_aliases.bash
+git add .bash_history .bashrc .bashrc.d/3_prompt.bash .bashrc.d/5_aliases.bash .viminfo
+git commit -m "updated" .bash_history .bashrc .bashrc.d/3_prompt.bash .bashrc.d/5_aliases.bash .viminfo
+gs
+git commit -m "moved to new files" .bashrc.d/aliases.bash .bashrc.d/os.bash .bashrc.d/prompt.bash
+gs
+git push -u origin master
+ls -al
+cd .profile.d/
+ls -lrt
+less java.sh 
+less exercism.sh 
+cd ../
+ls -lrt
+pwd
+ls -lrt
+ls -al
+less .bash_profile 
+cd .bashrc.d/
+vi 4_functions.bash 
+src
