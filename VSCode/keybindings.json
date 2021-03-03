@@ -1,0 +1,43 @@
+// Place your keybindings in this file to override the defaults.
+[
+  {
+    "key": "alt+shift+t",
+    "command": "trailing-spaces.deleteTrailingSpaces",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "cursorColumnSelectUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+down",
+    "command": "cursorColumnSelectDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+left",
+    "command": "cursorColumnSelectLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+right",
+    "command": "cursorColumnSelectRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+pageup",
+    "command": "cursorColumnSelectPageUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+pagedown",
+    "command": "cursorColumnSelectPageDown",
+    "when": "editorTextFocus"
+  }
+]
