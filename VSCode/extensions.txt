@@ -1,0 +1,31 @@
+Themes
+- Black Ocean
+- Panda
+- Rainglow
+
+Bindings
+- Atom Keymap -
+- IntelliJ IDEA Keybindings -
+- Visual Studio Keymap -
+
+Python
+- AutoDocstring - https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring
+- MagicPython - https://marketplace.visualstudio.com/items?itemName=magicstack.MagicPython
+- MS Python Pack - https://marketplace.visualstudio.com/items?itemName=ms-python.python
+- Pylance - https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance
+- Python Indent - https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent
+- Python Snippets - https://marketplace.visualstudio.com/items?itemName=frhtylcn.pythonsnippets
+- Python Type Hint - https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint
+
+General
+- All Autocomplete - 
+- Better Comments - 
+- Bracket Pair Colorizer 2 - 
+- Excel Viewer - 
+- Indent Rainbow - https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
+- Markdown All-In-One - 
+- Path Intellisense - 
+- Prettier - 
+- Todo Tree -
+- Trailing Spaces - 
+- XML Tools - 
