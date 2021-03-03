@@ -1,0 +1,84 @@
+{
+  "atomKeymap.promptV3Features": true,
+  "editor.acceptSuggestionsOnEnter": "off",
+  "editor.cursorBlinking": "smooth",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.fontFamily": "Fira Code Medium",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [88],
+  // "editor.semanticTokenColorCustomizations": {
+  //   "[One Dark Pro]": {
+  //     // Apply to this theme only
+  //     "enabled": true,
+  //     "rules": {
+  //       "magicFunction:python": "#ee0000",
+  //       "function.declaration:python": "#990000",
+  //       "*.decorator:python": "#0000dd",
+  //       "*.typeHint:python": "#5500aa",
+  //       "*.typeHintComment:python": "#aaaaaa",
+  //     }
+  //   }
+  // },
+  "editor.suggestSelection": "first",
+  "git.ignoreLegacyWarning": true,
+  // Pylance settings.
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.extraPaths": ["./vendor"],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length=88", "--target-version=py37"],
+  "python.formatting.blackPath": "black",
+  "python.languageServer": "Pylance",
+  "python.linging.flake8Args": [
+    //C101: Coding magic comment not found
+    //E266: too many leading '#' for block comment
+    //W503: line break before binary operator
+    "--ignore=C101,E266,W503",
+    "--max-line-length=88",
+  ],
+  "python.linting.pylintArgs": [
+    //C0411: wrong-import-order
+    //R0902: too-many-instance-attributes
+    //R0903: too-few-public-methods
+    //R0913: too-many-arguments
+    //W1201: logging-not-lazy
+    //W1203: logging-fstring-interpolation
+    "--disable=R0902,R0903,R0913,W1201,W1203",
+    //W0611: unused-import
+    "--enable=W0611"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "pylint",
+  "python.pythonPath": "python3",
+  // isort settings.
+  "python..sortImports.args": [
+    "--force-grid-wrap=2",
+    "--lines-between-types=0",
+    "--line-width=88",
+    "--multi-line=3",
+    "--project=${workspaceFolderBasename}",
+    "--settings-path=${env:HOME}/.isort.cfg",
+    "--trailing-comma",
+    "--use-parentheses",
+  ],
+  "python.sortImports.path": "isort",
+  "todo-tree.tree.showScanModeButton": false,
+  "trailing-spaces.trimOnSave": true,
+  "workbench.colorTheme": "Overflow Contrast (rainglow)",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "xmlTools.enableXmlTreeView": true,
+  
+  // Language specific editor settings.
+  "[python]: {
+    "editor.codeActionsOnSave": { "source.organizeImports": true },
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  }
+}
