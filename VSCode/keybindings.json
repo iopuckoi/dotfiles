@@ -1,15 +1,69 @@
 // Place your keybindings in this file to override the defaults.
 [
+  // Makes the breadcrumbs path line at the top of the editor take focus.
+  {
+    "key": "ctrl+shift+b",
+    "command": "breadcrumbs.focus",
+    "when": "breadcrumbsPossile"
+  },
+  // Open the command palette and show all available build tasks.
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbendh.action.tasks.build"
+  },
+  // Activate a new integrated terminal.
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.new"
+  },
+  // Kill the currently focused integrated terminal.
+  {
+    "key": "ctrl+shift+delete,
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  // Toggle between integrated terminal and editor.
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  // Delete any trailing spaces in the current document.
   {
     "key": "alt+shift+t",
     "command": "trailing-spaces.deleteTrailingSpaces",
     "when": "editorTextFocus"
   },
+  // Delete an entire line of text.
   {
     "key": "ctrl+shift+k",
     "command": "editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   },
+  // Toggle to the next tab to the right in the editor.
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.nextEditor",
+    "when": "editorFocus"
+  },
+  // Toggle to the previous tab to the left in the editor.
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.previousEditor",
+    "when": "editorFocus"
+  },
+  // Toggle to the next tab to the right in the integrated terminal.
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  // Toggle to the previous tab to the left in the integrated terminal.
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  // Actions for highlighting and selecting a column of text.
   {
     "key": "alt+up",
     "command": "cursorColumnSelectUp",
