@@ -1,3 +1,8 @@
+// The following settings need to be adjusted in your workspace_settings.json file.
+// "python.envFile"
+// "python.pythonPath"
+// "python.sortImports.args"
+// "python.testing.pytestArgs"
 {
   "atomKeymap.promptV3Features": true,
   "editor.acceptSuggestionsOnEnter": "off",
@@ -59,29 +64,14 @@
   ],
   "python.linting.pylintEnabled": true,
   "python.linting.pylintPath": "pylint",
-  "python.pythonPath": "python3",
+  //"python.pythonPath": Defined in workspace_settings.json
   // isort settings.
-  "python..sortImports.args": [
-    "--force-grid-wrap=2",
-    "--lines-between-types=0",
-    "--line-width=88",
-    "--multi-line=3",
-    "--project=${workspaceFolderBasename}",
-    "--settings-path=${env:HOME}/.isort.cfg",
-    "--trailing-comma",
-    "--use-parentheses",
-  ],
+  //"python.sortImports.args": Defined in workspace_settings.json
   "python.sortImports.path": "isort",
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
   "python.testing.pytestEnabled": true,
   "python.testing.pytestPath": "pytest",
-  "python.testing.pytestArgs": [
-    "--ignore-glob=__pycache__",
-    "--ignore-glob=vendor",
-    "--cov-report=term-missing",
-    "--cov=${workspacveFolderBasename}",
-    "-vv"
-   ],
+  // "python.testing.pytestArgs": Defined in workspace_settings.json
   "todo-tree.tree.showScanModeButton": false,
   "trailing-spaces.trimOnSave": true,
   "workbench.colorTheme": "Overflow Contrast (rainglow)",
