@@ -1,3 +1,4 @@
+// Place this in a workspace's .vscode directory.
 {
   "python.envFile": "${workspaceFolder}/.vscode/.env",
   "python.pythonPath": "${?}", // Set this to the path to the python executable in your environment.  If using pyenv, ~/.pyenv/versions/<venvname>/bin/python
