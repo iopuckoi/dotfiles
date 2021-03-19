@@ -4,3 +4,15 @@ To use pyenv to make a virtual environment (assuming pyenv installed).
 
 Todo:
 - create own project which can be used to install all setup dependencies and whatnot for a new Python project, and set a workspace's .vscode folder?
+- maybe just have a script like the following...
+  - new_project.py project_name python_version
+    - run pyenv virtualblah from the top of this file
+    - set local pyenv
+    - maybe have some setup.py with all necessary dependencies?
+      - black
+      - isort
+      - flake8
+      - pylint
+      - etc?
+    - pull all files from a git repo that have basic .vscode stuff (.isort, .env, etc)
+    - have script fill out missing settings and then plop in project/.vscode
