@@ -37,10 +37,9 @@
   "python.languageServer": "Pylance",
   "python.linting.flake8Args": [
     //C101: Coding magic comment not found
-    //E266: too many leading '#' for block comment
     //W503: line break before binary operator
-    "--ignore=C101,E266,W503",
-    "--max-line-length=88",
+    "--ignore=C101,W503",
+    "--max-line-length=100",
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
@@ -49,7 +48,6 @@
     "**tests/unit/*.py"
    ],
   "python.linting.pylintArgs": [
-    //C0411: wrong-import-order
     //R0902: too-many-instance-attributes
     //R0903: too-few-public-methods
     //R0913: too-many-arguments
