@@ -1,0 +1,6 @@
+To use pyenv to make a virtual environment (assuming pyenv installed).
+- pyenv virtualenv <python_version> <python_version>_<project_name> // use - instead of _ in "project_name", ex - my-project, not my_project
+- pyenv local <version created above>
+
+Todo:
+- create own project which can be used to install all setup dependencies and whatnot for a new Python project, and set a workspace's .vscode folder?
