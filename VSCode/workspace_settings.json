@@ -1,0 +1,22 @@
+{
+  "python.envFile": "${workspaceFolder}/.vscode/.env",
+  "python.pythonPath": "${?}", // Set this to the path to the python executable in your environment.  If using pyenv, ~/.pyenv/versions/<venvname>/bin/python
+  // isort settings.
+  "python.sortImports.args": [
+    "--force-grid-wrap=2",
+    "--lines-between-types=0",
+    "--line-width=88",
+    "--multi-line=3",
+    "--project=${workspaceFolderBasename}",
+    "--settings-path=${workspaceFolder}/.vscode/.isort.cfg",
+    "--trailing-comma",
+    "--use-parentheses",
+  ],
+  "python.testing.pytestArgs": [
+    "--ignore-glob=__pycache__",
+    "--ignore-glob=vendor",
+    "--cov-report=term-missing",
+    "--cov=${?}", // Set this to the name of the project
+    "-vv"
+   ],
+}
