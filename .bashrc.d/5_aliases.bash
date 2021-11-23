@@ -59,6 +59,7 @@ fi
 
 # some more ls aliases
 
+alias lsa='ls -larth'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -69,7 +70,12 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # random aliases
+alias find='find . -name '
+alias mage='$HOME/golang/mage'
+alias pst='$HOME/golang/pst'
+alias json='jq "."'
 alias rxrx="perl -MRegexp::Debugger -E 'Regexp::Debugger::rxrx(@ARGV)'"
 alias spacehog='du -sh * | sort -h'
 alias src='source ~/.bashrc'
+alias term='/bin/terminator -p Rick &'
 alias tmpclean='sudo find /tmp -ctime +10 -exec rm -rf {} +'
