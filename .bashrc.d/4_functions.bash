@@ -35,7 +35,7 @@ function p(){
 function add(){
 	RET=`ssh-add -l`
 	if [[ ! ${RET}=~ "~/.ssh/id_rsa" ]]; then
-		RET2-`ps -e | grep ssh-agent`
+		RET2=`ps -e | grep ssh-agent`
 		if [[ ! ${RET2} ]]; then
 			eval `ssh-agent -s`
 		fi
@@ -43,10 +43,9 @@ function add(){
 	fi
 }
 
-function tunnels(){
+#function tunnels(){
 	#ssh -4 -L 0.0.0.0:<port#>:localhost:<port#> -N -f <user>@<hostIP> -o ServerAliveInterval=5
-}
-}
+#}
 
 # Show the current distribution
 
