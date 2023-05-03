@@ -34,8 +34,10 @@ function p(){
 
 function add(){
 	RET=`ssh-add -l`
-	if [[ ! ${RET}=~ "~/.ssh/id_rsa" ]]; then
+        MATCH='no identities'
+	if [[ $RET =~ $MATCH ]]; then
 		RET2=`ps -e | grep ssh-agent`
+                echo "${RET2}"
 		if [[ ! ${RET2} ]]; then
 			eval `ssh-agent -s`
 		fi
