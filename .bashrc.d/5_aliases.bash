@@ -74,6 +74,7 @@ alias find='find . -name '
 alias mage='$HOME/golang/mage'
 alias pst='$HOME/golang/pst'
 alias json='jq "."'
+alias penv='/home/rmknigh/dev/penv/penv.sh'
 alias rxrx="perl -MRegexp::Debugger -E 'Regexp::Debugger::rxrx(@ARGV)'"
 alias spacehog='du -sh * | sort -h'
 alias src='source ~/.bashrc'
