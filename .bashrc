@@ -16,9 +16,17 @@ fi
 
 unset -v config
 
+# Setup Java.
+export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))
+export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+
+# Setup Python.
 export PYENV_ROOT=/home/rmknigh/.pyenv
 PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Add kotlin to path.
+PATH="/bin/kotlinc/bin:$PATH"
 PATH=$(printf "%s" "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')
