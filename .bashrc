@@ -16,7 +16,7 @@ fi
 
 unset -v config
 
-export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/local/lib64:/usr/lib64:/bin/gcc:/opt/local/glibc-2.18/lib
+export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/local/lib64:/usr/lib64:/bin/gcc
 
 # Setup Java.
 export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))
@@ -26,15 +26,18 @@ export MAVEN_HOME=/opt/maven
 export PATH=$PATH:$M2_HOME/bin:$JAVA_HOME/bin
 
 # Setup Python.
-export PYENV_ROOT=/home/rmknigh/.pyenv
+export PYENV_ROOT=$HOME/.pyenv
 PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # Setup Kotlin.  KOTLIN_HOME is set by snapd.
-#export KOTLIN_HOME=/var/lib/snapd/snap/bin/kotlin
 export PATH=$PATH:$KOTLIN_HOME
-
 
 # Deduplicate PATH.
 PATH=$(printf "%s" "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')
+
+# May need to clean up the following if running setup script on multiple boxes.
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
