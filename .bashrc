@@ -18,6 +18,15 @@ unset -v config
 
 export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/local/lib64:/usr/lib64:/bin/gcc
 
+# Setup Golang.
+export GOROOT=/var/lib/snapd/snap/go/current
+#export GOPATH=/path/to/go/packages
+export PATH=$PATH:$GOROOT/bin
+
+# SEeup Gradle.
+export GRADLE_HOME=/var/lib/snapd/snap/gradle/current/opt/gradle
+export PATH=$PATH:$GRADLE_HOME/bin
+
 # Setup Java.
 export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))
 export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
@@ -31,8 +40,9 @@ PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# Setup Kotlin.  KOTLIN_HOME is set by snapd.
-export PATH=$PATH:$KOTLIN_HOME
+# Setup Kotlin.
+export KOTLIN_HOME==/var/lib/snapd/snap/kotlin/current
+export PATH=$PATH:$KOTLIN_HOME/bin
 
 # Deduplicate PATH.
 PATH=$(printf "%s" "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')
