@@ -23,7 +23,7 @@ export GOROOT=/var/lib/snapd/snap/go/current
 #export GOPATH=/path/to/go/packages
 export PATH=$PATH:$GOROOT/bin
 
-# SEeup Gradle.
+# Seeup Gradle.
 export GRADLE_HOME=/var/lib/snapd/snap/gradle/current/opt/gradle
 export PATH=$PATH:$GRADLE_HOME/bin
 
@@ -41,7 +41,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # Setup Kotlin.
-export KOTLIN_HOME==/var/lib/snapd/snap/kotlin/current
+export KOTLIN_HOME=/var/lib/snapd/snap/kotlin/current
 export PATH=$PATH:$KOTLIN_HOME/bin
 
 # Deduplicate PATH.
